@@ -1,0 +1,16 @@
+--cpu Cortex-M0
+".\obj\tcp_server.o"
+".\obj\ch57x_clk.o"
+".\obj\ch57x_pwr.o"
+".\obj\ch57x_gpio.o"
+".\obj\ch57x_uart1.o"
+".\obj\ch57x_sys.o"
+".\obj\ch57x_int.o"
+".\obj\ch57x_adc.o"
+".\obj\ch57x_flash.o"
+".\obj\startup_armcm0.o"
+"..\LIB\CH57xNET.LIB"
+--library_type=microlib --strict --scatter ".\obj\TCP_server.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Lst\TCP_server.map" -o .\obj\TCP_server.axf

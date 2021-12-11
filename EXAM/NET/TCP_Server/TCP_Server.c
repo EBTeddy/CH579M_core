@@ -61,7 +61,7 @@ __align(4)UINT8 Mem_ArpTable[CH57xNET_RAM_ARP_TABLE_SIZE];
 																				
 /* CH579相关定义 */
 UINT8 MACAddr[6]= {0x84,0xc2,0xe4,0x02,0x03,0x04};                              /* CH579MAC地址 */
-UINT8 IPAddr[4] = {192,168,1,200};                                              /* CH579IP地址 */
+UINT8 IPAddr[4] = {192,168,1,136};                                              /* CH579IP地址 */
 UINT8 GWIPAddr[4]={192,168,1,1};                                                /* CH579网关 */
 UINT8 IPMask[4] = {255,255,255,0};                                              /* CH579子网掩码 */
 
